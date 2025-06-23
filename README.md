@@ -21,4 +21,7 @@ To be added (optional screenshot of output in Markdown)
 ```bash
 git clone https://github.com/yourusername/ai-brochure-generator
 cd ai-brochure-generator
+<<<<<<< HEAD
 
+=======
+>>>>>>> 09b80a3f5fc7fe0e06119970352804aa3b618740
