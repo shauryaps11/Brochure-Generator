@@ -1,16 +1,23 @@
-def stream_brochure(company_name, url):
-    stream = openai.chat.completions.create(
-        model=MODEL,
-        messages=[
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": get_brochure_user_prompt(company_name, url)}
-        ],
-        stream=True
-    )
-    
-    response = ""
-    display_handle = display(Markdown(""), display_id=True)
-    for chunk in stream:
-        response += chunk.choices[0].delta.content or ''
-        response = response.replace("```", "").replace("markdown", "")
-        update_display(Markdown(response), display_id=display_handle.display_id)
+# 🧠 AI-Powered Company Brochure Generator
+
+Automatically scrapes and summarizes company websites to generate structured brochures using OpenAI's GPT and local LLMs like LLaMA via Ollama.
+
+## 🚀 Features
+- Extracts relevant company content (About, Careers, etc.) via web scraping
+- Uses OpenAI API + Ollama to generate clean Markdown/JSON brochures
+- Supports multi-model evaluation: GPT-4, Claude, Gemini, LLaMA
+- Streaming output (typewriter effect) via Jupyter
+- One-shot/multi-shot prompting strategies
+
+## 🛠️ Tech Stack
+Python · OpenAI API · Ollama (LLaMA) · Web Scraping (BeautifulSoup)  
+JupyterLab · Anaconda · dotenv · Markdown · JSON
+
+## 📷 Demo
+To be added (optional screenshot of output in Markdown)
+
+## 🧪 How to Run
+1. Clone the repo:
+```bash
+git clone https://github.com/yourusername/ai-brochure-generator
+cd ai-brochure-generator
