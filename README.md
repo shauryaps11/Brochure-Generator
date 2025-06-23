@@ -14,7 +14,7 @@ Python · OpenAI API · Ollama (LLaMA) · Web Scraping (BeautifulSoup)
 JupyterLab · Anaconda · dotenv · Markdown · JSON
 
 ## 📷 Demo
-To be added (optional screenshot of output in Markdown)
+To be added later
 
 ## 🧪 How to Run
 1. Clone the repo:
